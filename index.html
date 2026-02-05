@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Private Copy</title>
+<style>
+body {
+  background: white;
+  font-family: Consolas, monospace;
+  padding: 40px;
+}
+#content {
+  display: none;
+  white-space: pre-wrap;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>67676767</h3>
+<input type="password" id="pass">
+<button onclick="login()">เข้า</button>
+
+<div id="content">
+#include <stdio.h>
+
+int main()
+{
+    int grade;
+    printf("Enter your Grade = ");
+    scanf("%d", &grade);
+
+    switch (grade)
+    {
+        case 4 : printf("Excellence \n"); break;
+        case 3 : printf("Good \n"); break;
+        case 2 : printf("Fair \n"); break;
+        case 1 : printf("Poor \n"); break;
+        case 0 : printf("Failed \n"); break;
+        default : printf("Wrong Number \n"); break;
+    }
+
+    return 0;
+}
+  
+</div>
+
+<script>
+function login() {
+  if (document.getElementById("pass").value === "1234") {
+    document.getElementById("content").style.display = "block";
+  } else {
+    alert("รหัสผิด");
+  }
+}
+</script>
+
+</body>
+</html>
